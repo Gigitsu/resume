@@ -1,0 +1,170 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\name{Luigi Clemente} % Your name
+\address{Via Zara 7 \\ Altamura (BA), Italia 70022} % Your address
+\address{github.com/Gigitsu \\ Skype: luigi.clemente.g2} % Your address
+\address{+39 328-540-9008 \\ luigi.clemente@gsquare.it} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Esperienze Professionali}
+
+\begin{rSubsection}{ATS S.p.A.}{Ottobre 2018 - Presente}{Full Stack Developer | DevOps}{Milano}
+\item Sviluppo della piattaforma BlinkS, un marketplace digitale per il trading di portafogli di crediti deteriorati.
+Backend restful scritto in Scala con AkkaHttp e frontend in Angular.
+\item Progettazione ed implementazione dei test di unit\`a (usando ScalaTest, ScalaMock e le macro di scala).
+\item Progettazione ed implementazione della pipeline di rilascio e di build utilizzando gli strumenti di CI forniti da GitLab.
+\item Configurazione dell'ambiente di test e produzione su Azure (k8s, MySQL).
+\item Deploy dell'applicazione su un cluster k8s.
+\item Messa in sicuezza dell'applicazione (ingress nginx con ModSecurity e regole custom).
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{SIA S.p.A.}{Gennaio 2018 - Ottobre 2018}{Backend Developer}{Milano}
+\item Sviluppo della nuova versione del message broker del sistem PagoPA\textregistered~ (chiamato ``Nodo dei Pagamenti SPC"),
+un sistema reactive che usa Scala, scalaxb, Akka e Akka Cluster per gestire il flusso dei pagamenti tra gli attori coinvolti e il governo.
+\item Progettazione ed implementazione dei test per il ``Nodo dei Pagamenti SPC" (usando Scalatest).
+\item Progettazione ed implementazione della pipeline di rilascio delle applicazioni utilizzando Jenkins.
+\item Rilascio delle applicazioni su un cluster OpenShift in ambiente di test.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Exprivia S.p.A.}{Maggio 2016 - Dicembre 2017}{Lead Developer}{Molfetta}
+\item Progettazione ed implementazione di un motore, usando TypeScript e Angular2,
+in grado di emulare le funzionalit\`a della tecnologia Oracle Forms e perci\`o eseguire le vecchie applicazioni Oracle Forms sui browser moderni.
+\item Manutenzione di uno strumento capace di convertire i file di salvataggio di Oracle Forms in file in formato JSON/TypeScript, usando Java e ANTLR.
+\item Uso di git e gitflow per gestire il processo di sviluppo.
+\item Progettazione ed implementazione di widget per l'home banking di Banca Mediolanum, usando Google Closure lib, D3js e C3js.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{ApuliaSoft S.r.l.}{Ottobre 2015 - Presente}{Senior Developer}{Bari}
+\item Sviluppo di www.dolcidee.it, una comunit\`a web dove gli utenti possono condividere ricette e consigli di cucina, usando PHP e Symfony 2.
+\item Progettazione ed implementazione di un bot Slack, scritto in JavaScript e pubblicato su Heroku, per aiutare a monitorare le attivit\`a e
+la felicit\`a dei dipendenti attraverso delle domande fatte dal bot al termine di ogni giornata lavorativa.
+\item Progettazione ed implementazione di uno strumento per ottimizzare la disposizione degli articoli sugli espositori nei supermercati, usando TypeScript e Angular2.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{My Special Gift S.r.l.s., Startup}{April 2013 - May 2014}{Full Stack Developer}{Bari}
+\item Progettazione ed implementazione dell'applicazione web My Special Gift tramite la quale gli utenti possono creare e condividere le proprie liste regalo e farsi finanziare da amici e parenti attraverso donazioni PayPal, usando HTML, CSS e PHP con Yii.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{DigitalCopy S.r.l.}{August 2010 - March 2013}{Developer}{Altamura (BA)}
+\item Manutenzione di un software gestionale per supermercati di piccole e medie dimensioni, usando Microsoft Access e VB6
+\item Progettazione ed implementation di un software per la gestione dei registratori di cassa nei supermercati, usando C\# .NET 4 con Microsoft WPF, dapper.net e sqlite
+\item Progettazione ed implementation di un software gestionale per supermercati di piccole e medie dimensioni, usando C\# .NET 4 con Microsoft WPF, nHibernate e SQLServer
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Competenze Tecniche}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Sistemi Operativi & Windows, MacOS, Linux \\
+Principali linguaggi & Java, Scala, JavaScript, TypeScript, C\# \\
+Altri linguaggi e runtime & Node.js, PHP, Python, Rust, R, SQL, HTML/XML, CSS \\
+Frameworks e librerie & Apache Spark, Akka, Angular JS, D3js, C3js \\
+DBMS & MySQL, PostgreSQL, SQL Server \\
+Database NoSQL & MongoDB, Elasticsearch, Redis \\
+Altro software & Git, SBT, Eclipse, IntelliJ, Vim \\
+& Visual Studio, Kibana \\
+Strumenti DevOps & Docker, Jenkins \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Educazione}
+
+\begin{rSubsection}{Universit\`a degli studi di Bari ``Aldo Moro"}{Aprile 2016}{Laurea Triennale in Informatica e Tecnologie per la Produzione del Software, 110/110}{Bari}
+Tesi: Applicazioni di Reti Neurali Ricorrenti al PoS-Tagging di Testi
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATIONS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Certificazioni}
+
+\begin{rSubsection}{Coursera}{2017}{}{}
+\item Functional Programming Principles in Scala (Licenza numero: 85UUFRQVJ75F)
+\item Functional Program Design in Scala (Licenza numero: BYV4DHVGYYDU)
+\item Parallel programming (Licenza numero: 6BX9A2UTCGAX)
+\end{rSubsection}
+
+\begin{rSubsection}{MongoDB University}{2014}{}{}
+\item M101P MongoDB for Developers
+\end{rSubsection}
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Languages}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Italiano & Madrelingua \\
+Inglese & Livello intermedio, scritto e parlato
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

@@ -1,0 +1,158 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\name{Luigi Clemente} % Your name
+\address{Via Zara 7 \\ Altamura (BA), Italia 70022} % Your address
+\address{github.com/Gigitsu \\ Skype: luigi.clemente.g2} % Your address
+\address{+39 328-540-9008 \\ luigi.clemente@gsquare.it} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{SIA S.p.A.}{January 2018 - Present}{Backend Developer}{Milan}
+\item Development of the new version of the message broker of PagoPA\textregistered~system (named ``Nodo dei Pagamenti SPC"),
+a reactive system which uses Scala, scalaxb, Akka and Akka Cluster to handle payments flows between the involved stakeholders and the government.
+\item Design and implementation of tests for ``Nodo dei Pagamenti SPC" (using Scalatest).
+\item Design and implementation of application-based release pipelines with Jenkins.
+\item Release of application components on OpenShift cluster in test environment.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Exprivia S.p.A.}{May 2016 - December 2017}{Lead Developer}{Molfetta}
+\item Design and implementation of an engine, using TypeScript and Angular2,
+able to emulate Oracle Forms functionality and therefore run old oracle forms application on modern browsers.
+\item Maintenance of a tool to convert Oracle Forms save files into JSON/TypeScript format files, using Java and ANTLR.
+\item Use of git and gitflow to manage the development process.
+\item Design and implementation of widgets for the home banking of Banca Mediolanum, using Google Closure lib, D3js and C3js.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{ApuliaSoft S.r.l.}{October 2015 - Present}{Senior Developer}{Bari}
+\item Development of www.dolcidee.it, a web community where people can share recipes and cooking advice, using PHP and Symfony 2.
+\item Design and implementation of a Slack bot, written in JavaScript and deployed on Heroku, that help monitoring activities and
+happiness of the employees through questions made by the bot at the end of every working days.
+\item Design and implementation of a tool to optimize the disposition of articles into pallet displays for supermarkets, using TypeScript and Angular2.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{My Special Gift S.r.l.s., Startup}{April 2013 - May 2014}{Full Stack Developer}{Bari}
+\item Design and development of the My Special Gift platform through which you can create shared gift lists and where your friends can pay a stake through a PayPal account, using HTML, CSS and PHP with Yii.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{DigitalCopy S.r.l.}{August 2010 - March 2013}{Developer}{Altamura (BA)}
+\item Maintenance of a management software for small and medium sized supermarket, using Microsoft Access and VB6
+\item Design and development of a cash register software for supermarket, using C\# .NET 4 with Microsoft WPF, dapper.net and sqlite
+\item Design and development of a management software for small and medium sized supermarket, using C\# .NET 4 with Microsoft WPF, nHibernate and SQLServer
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Operating Systems & Windows, MacOS, Linux \\
+Main programming languages & Java, Scala, JavaScript, TypeScript, C\# \\
+Other scripting languages and runtime & Node.js, PHP, Python, Rust, R, SQL, HTML/XML, CSS \\
+Frameworks and libraries & Apache Spark, Akka, Angular JS, D3js, C3js \\
+DBMS & MySQL, PostgreSQL, SQL Server \\
+NoSQL Databases & MongoDB, Elasticsearch, Redis \\
+Other software & Git, SBT, Eclipse, IntelliJ, Vim \\
+& Visual Studio, Kibana \\
+DevOps tools & Docker, Jenkins \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+\begin{rSubsection}{University of Bari ``Aldo Moro"}{April 2016}{BCs in Computer Science, 110/110}{Bari}
+Thesis: Applicazioni di Reti Neurali Ricorrenti al PoS-Tagging di Testi
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATIONS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Certifications}
+
+\begin{rSubsection}{Coursera}{2017}{}{}
+\item Functional Programming Principles in Scala (License number: 85UUFRQVJ75F)
+\item Functional Program Design in Scala (License number: BYV4DHVGYYDU)
+\item Parallel programming (License number: 6BX9A2UTCGAX)
+\end{rSubsection}
+
+\begin{rSubsection}{MongoDB University}{2014}{}{}
+\item M101P MongoDB for Developers
+\end{rSubsection}
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Languages}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Italian & Native speaker \\
+English & Intermediate level, written and spoken
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
