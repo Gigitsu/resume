@@ -22,6 +22,14 @@
 
 \LoadClass[11pt,letterpaper]{article} % Font size and paper type
 
+%%%%%%%%%%%%%%%%%
+%%% Helvetica %%%
+%%%%%%%%%%%%%%%%%
+
+% \usepackage[scaled]{helvet}
+% \renewcommand\familydefault{\sfdefault} 
+% \usepackage[T1]{fontenc}
+
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
