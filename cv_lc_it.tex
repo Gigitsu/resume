@@ -1,185 +1,296 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV
+% GG Professional CV
 % LaTeX Template
-% Version 2.0 (8/5/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Trey Hunner (http://www.treyhunner.com/)
-%
-% Important note:
-% This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring the
-% document.
-%
+% Version 0.1 (5/9/22)
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-
-\name{Luigi Clemente} % Your name
-\address{github.com/Gigitsu \\ Skype: luigi.clemente.g2} % Your address
-\address{+39 328-540-9008 \\ luigi.clemente@gsquare.it} % Your phone number and email
+\name{Luigi}{Clemente}
+\position{Software Engineer}
+\github{gigitsu}
+\mobile{(+39) 328-5409008}
+\linkedin{luigi-clemente-g2}
+\email{luigi.clemente@gsquare.it}
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
 
-\begin{rSection}{Esperienze Professionali}
+\cvSection{Esperienze Professionali}
 
-\begin{rSubsection}{AgileLab}{Ottobre 2019 - Presete}{Data Engineer}{Bari}
-\item Progettazione e sviluppo della piattaforma di DataMesh per Enel usando come teconologie Dremio, Spark, Springboot con linguaggi Java, Scala e python
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
-\begin{rSubsection}{Dottori.it}{Settembre 2019 - Ottobre 2019}{Senior Software Engineer}{Milano}
-\item Sviluppo e manutenzione della piattaforma web Dottori.it, uno strumento in grado di aiutare l'utente nella ricerca
-del miglior medico o dentista nella propria citt\`a, facilitando il contatto tra paziente e dottore, e semplificando il
-processo di prenotazione.
-\item Progettazione ed implementazione di un sistema a microservizi (usando Elixir, Phoenix e Ecto).
-\item Progettazione ed implementazione dei test di unit\`a (usando ExUnit).
-\item Progettazione ed implementazione dei database utilizzati dai microservizi (PostgreSQL)
-\item Deploy dell'applicazione su un cluster Kubernetes.
-\end{rSubsection}
+\cvEntry
+  {AgileLab}
+  {Milano}
+  {Data Engineer}
+  {Ottobre 2019 - Presente}{
+    \begin{cvEntryItems}
+      \item Progettazione e sviluppo della piattaforma di DataMesh per Enel usando come
+            teconologie Dremio, Spark, Springboot con linguaggi Java, Scala e Python.
+    \end{cvEntryItems}
+}
 
-%------------------------------------------------
-\begin{rSubsection}{ATS S.p.A.}{Ottobre 2018 - Agosto 2019}{Full Stack Developer | DevOps}{Milano}
-\item Sviluppo della piattaforma BlinkS, un marketplace digitale per il trading di portafogli di crediti deteriorati.
-Backend restful scritto in Scala con AkkaHttp e frontend in Angular.
-\item Progettazione ed implementazione delle api rest e di componenti Angular.
-\item Progettazione ed implementazione dei test di unit\`a (usando ScalaTest, ScalaMock e le macro di scala).
-\item Progettazione ed implementazione della pipeline di rilascio e di build utilizzando gli strumenti di CI forniti da GitLab.
-\item Configurazione dell'ambiente di test e produzione su Azure (Kubernetes, MySQL).
-\item Deploy dell'applicazione su un cluster Kubernetes.
-\item Messa in sicuezza dell'applicazione usando ModSecurity con CRS e regole personalizzate su ingress nginx
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
-%------------------------------------------------
+\cvEntry
+  {Dottori.it}
+  {Milano}
+  {Back-end Software Engineer}
+  {Settembre 2019 - Ottobre 2019}{
+    \begin{cvEntryItems}
+      \item Sviluppo e manutenzione della piattaforma web Dottori.it, uno strumento in grado
+            di aiutare l'utente nella ricerca del miglior medico o dentista nella propria
+            citt\`a, facilitando il contatto tra paziente e dottore, e semplificando il
+            processo di prenotazione.
+      \item Progettazione ed implementazione di un sistema a microservizi (usando Elixir,
+            Phoenix e Ecto).
+      \item Progettazione ed implementazione dei test di unit\`a (usando ExUnit).
+      \item Progettazione ed implementazione dei database utilizzati dai microservizi (PostgreSQL)
+      \item Deploy dell'applicazione su un cluster Kubernetes.
+    \end{cvEntryItems}
+}
 
-\begin{rSubsection}{SIA S.p.A.}{Gennaio 2018 - Settembre 2018}{Backend Developer}{Milano}
-\item Sviluppo della nuova versione del message broker del sistem PagoPA\textregistered~ (chiamato ``Nodo dei Pagamenti SPC"),
-un sistema reactive che usa Scala, scalaxb, Akka e Akka Cluster per gestire il flusso dei pagamenti tra gli attori coinvolti e il governo.
-\item Progettazione ed implementazione dei test per il ``Nodo dei Pagamenti SPC" (usando Scalatest).
-\item Progettazione ed implementazione della pipeline di rilascio delle applicazioni utilizzando Jenkins.
-\item Rilascio delle applicazioni su un cluster OpenShift in ambiente di test.
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
-%------------------------------------------------
+\cvEntry
+  {ATS S.p.A.}
+  {Milano}
+  {Back-end Software Engineer | DevOps (consulente esterno ApuliaSoft)}
+  {Ottobre 2018 - Agosto 2019}{
+    \begin{cvEntryItems}
+      \item Sviluppo della piattaforma BlinkS, un marketplace digitale per il trading di
+            portafogli di crediti deteriorati. Backend restful scritto in Scala con AkkaHttp
+            e frontend in Angular.
+      \item Progettazione ed implementazione delle api rest e di componenti Angular.
+      \item Progettazione ed implementazione dei test di unit\`a (usando ScalaTest, ScalaMock
+            e le macro di Scala).
+      \item Progettazione ed implementazione della pipeline di rilascio e di build utilizzando
+            gli strumenti di CI forniti da GitLab.
+      \item Configurazione dell'ambiente di test e produzione su Azure (Kubernetes, MySQL).
+      \item Deploy dell'applicazione su un cluster Kubernetes.
+      \item Messa in sicuezza dell'applicazione usando ModSecurity con CRS e regole personalizzate
+            su ingress nginx
+    \end{cvEntryItems}
+}
 
-\begin{rSubsection}{Exprivia S.p.A.}{Maggio 2016 - Dicembre 2017}{Lead Developer}{Molfetta}
-\item Progettazione ed implementazione di un motore, usando TypeScript e Angular2,
-in grado di emulare le funzionalit\`a della tecnologia Oracle Forms e perci\`o eseguire le vecchie applicazioni Oracle Forms sui browser moderni.
-\item Manutenzione di uno strumento capace di convertire i file di salvataggio di Oracle Forms in file in formato JSON/TypeScript, usando Java e ANTLR.
-\item Uso di git e gitflow per gestire il processo di sviluppo.
-\item Progettazione ed implementazione di widget per l'home banking di Banca Mediolanum, usando Google Closure lib, D3js e C3js.
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
-%------------------------------------------------
+\cvEntry
+  {SIA S.p.A.}
+  {Milano}
+  {Back-end Software Engineer (consulente esterno ApuliaSoft)}
+  {Gennaio 2018 - Settembre 2018}{
+    \begin{cvEntryItems}
+      \item Sviluppo della nuova versione del message broker del sistem PagoPA\textregistered~
+            (chiamato ``Nodo dei Pagamenti SPC"), un sistema reactive che usa Scala, scalaxb,
+            Akka e Akka Cluster per gestire il flusso dei pagamenti tra gli attori coinvolti
+            e il governo.
+      \item Progettazione ed implementazione dei test per il ``Nodo dei Pagamenti SPC" (usando
+            Scalatest).
+      \item Progettazione ed implementazione della pipeline di rilascio delle applicazioni
+            utilizzando Jenkins.
+      \item Rilascio delle applicazioni su un cluster OpenShift in ambiente di test.
+    \end{cvEntryItems}
+}
 
-\begin{rSubsection}{ApuliaSoft S.r.l.}{Ottobre 2015 - Presente}{Senior Developer}{Bari}
-\item Sviluppo di www.dolcidee.it, una comunit\`a web dove gli utenti possono condividere ricette e consigli di cucina, usando PHP e Symfony 2.
-\item Progettazione ed implementazione di un bot Slack, scritto in JavaScript e pubblicato su Heroku, per aiutare a monitorare le attivit\`a e
-la felicit\`a dei dipendenti attraverso delle domande fatte dal bot al termine di ogni giornata lavorativa.
-\item Progettazione ed implementazione di uno strumento per ottimizzare la disposizione degli articoli sugli espositori nei supermercati, usando TypeScript e Angular2.
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
-%------------------------------------------------
+\cvEntry
+  {Exprivia S.p.A.}
+  {Molfetta}
+  {Software Architect (consulente esterno ApuliaSoft)}
+  {Maggio 2016 - Dicembre 2017}{
+    \begin{cvEntryItems}
+      \item Progettazione ed implementazione di un motore, usando TypeScript e Angular2, in
+            grado di emulare le funzionalit\`a della tecnologia Oracle Forms e perci\`o
+            eseguire le vecchie applicazioni Oracle Forms sui browser moderni.
+      \item Manutenzione di uno strumento capace di convertire i file di salvataggio di Oracle
+            Forms in file in formato JSON/TypeScript, usando Java e ANTLR.
+      \item Uso di git e gitflow per gestire il processo di sviluppo.
+      \item Progettazione ed implementazione di widget per l'home banking di Banca Mediolanum,
+            usando Google Closure lib, D3js e C3js.
+    \end{cvEntryItems}
+}
 
-\begin{rSubsection}{My Special Gift S.r.l.s., Startup}{April 2013 - May 2014}{Full Stack Developer}{Bari}
-\item Progettazione ed implementazione dell'applicazione web My Special Gift tramite la quale gli utenti possono creare e condividere le proprie liste regalo e farsi finanziare da amici e parenti attraverso donazioni PayPal, usando HTML, CSS e PHP con Yii.
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
-%------------------------------------------------
+\cvEntry
+  {ApuliaSoft S.r.l.}
+  {Bari}
+  {Senior Developer}
+  {Ottobre 2015 - Agosto 2019}{
+    \begin{cvEntryItems}
+      \item Sviluppo di www.dolcidee.it, una comunit\`a web dove gli utenti possono condividere
+            ricette e consigli di cucina, usando PHP e Symfony 2.
+      \item Progettazione ed implementazione di un bot Slack, scritto in JavaScript e pubblicato
+            su Heroku, per aiutare a monitorare le attivit\`a e la felicit\`a dei dipendenti
+            attraverso delle domande fatte dal bot al termine di ogni giornata lavorativa.
+      \item Progettazione ed implementazione di uno strumento per ottimizzare la disposizione
+            degli articoli sugli espositori nei supermercati, usando TypeScript e Angular2.
+    \end{cvEntryItems}
+}
 
-\begin{rSubsection}{DigitalCopy S.r.l.}{August 2010 - March 2013}{Developer}{Altamura (BA)}
-\item Manutenzione di un software gestionale per supermercati di piccole e medie dimensioni, usando Microsoft Access e VB6
-\item Progettazione ed implementation di un software per la gestione dei registratori di cassa nei supermercati, usando C\# .NET 4 con Microsoft WPF, dapper.net e sqlite
-\item Progettazione ed implementation di un software gestionale per supermercati di piccole e medie dimensioni, usando C\# .NET 4 con Microsoft WPF, nHibernate e SQLServer
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
-\end{rSection}
+\cvEntry
+  {My Special Gift S.r.l.s., Startup}
+  {Bari}
+  {Full Stack Software Engineer}
+  {April 2013 - May 2014}{
+    \begin{cvEntryItems}
+      \item Progettazione ed implementazione dell'applicazione web My Special Gift tramite
+            la quale gli utenti possono creare e condividere le proprie liste regalo e farsi
+            finanziare da amici e parenti attraverso donazioni PayPal, usando HTML, CSS e
+            PHP con Yii.
+    \end{cvEntryItems}
+}
 
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+
+\cvEntry
+  {DigitalCopy S.r.l.}
+  {Altamura (BA)}
+  {Full Stack Software Engineer}
+  {August 2010 - March 2013}{
+    \begin{cvEntryItems}
+      \item Manutenzione di un software gestionale per supermercati di piccole e medie
+            dimensioni, usando Microsoft Access e VB6
+      \item Progettazione ed implementation di un software per la gestione dei registratori
+            di cassa nei supermercati, usando C\# .NET 4 con Microsoft WPF, dapper.net e sqlite
+      \item Progettazione ed implementation di un software gestionale per supermercati di
+            piccole e medie dimensioni, usando C\# .NET 4 con Microsoft WPF, nHibernate e SQLServer
+    \end{cvEntryItems}
+}
+
+%-----------------------------------------------------------------------------------------
+
+%-----------------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
 
-\begin{rSection}{Competenze Tecniche}
+\cvSection{Competenze}
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Sistemi Operativi & Windows, MacOS, Linux \\
-Principali linguaggi & Java, Scala, JavaScript, TypeScript, C\#, Python \\
-Altri linguaggi e runtime & Node.js, PHP, Rust, R, SQL, HTML/XML, CSS \\
-Frameworks e librerie & Apache Spark, Akka, Angular JS, D3js, C3js \\
-RDBMS & MySQL, PostgreSQL, SQL Server \\
-NoSQL & MongoDB, Elasticsearch, Redis \\
-Altro software & Git, SBT, Eclipse, IntelliJ, Vim \\
-& Visual Studio, Kibana, Dremio \\
-Altro & Docker, Jenkins, Microsoft Azure, Kubernetes \\
-\end{tabular}
+\begin{cvSkills}
 
-\end{rSection}
+%-----------------------------------------------------------------------------------------
 
-%----------------------------------------------------------------------------------------
+  \cvSkill
+    {Programmazione}
+    {Elixir, Scala, Java, TypeScript, C\#, PHP, Python, SQL}
+
+%-----------------------------------------------------------------------------------------
+
+  \cvSkill
+    {Front-end}
+    {HTML5, SASS, LESS, Angular}
+
+%-----------------------------------------------------------------------------------------
+
+  \cvSkill
+    {Databases}
+    {MySQL, PostgreSQL, SQL Server, MongoDB, Elasticsearch, Redis}
+
+%-----------------------------------------------------------------------------------------
+
+  \cvSkill
+    {Back-end}
+    {Phoenix, Ecto, Apache Spark, Akka}
+
+%-----------------------------------------------------------------------------------------
+
+  \cvSkill
+    {DevOps}
+    {Kibana, Docker, K8s, Microsoft Azure, AWS}
+
+%-----------------------------------------------------------------------------------------
+
+  \cvSkill
+    {Tools}
+    {Git, IntelliJ, Vim, VS Code, Tmux}
+
+%-----------------------------------------------------------------------------------------
+
+  \cvSkill
+    {}{}
+
+%-----------------------------------------------------------------------------------------
+
+  \cvSkill
+    {Lingue}
+    {Italiano, Inglese}
+
+%-----------------------------------------------------------------------------------------
+
+\end{cvSkills}
+
+%-----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
 
-\begin{rSection}{Educazione}
+\cvSection{Educazione}
 
-\begin{rSubsection}{Universit\`a degli studi di Bari ``Aldo Moro"}{Aprile 2016}{Laurea Triennale in Informatica e Tecnologie per la Produzione del Software, 110/110}{Bari}
-Tesi: Applicazioni di Reti Neurali Ricorrenti al PoS-Tagging di Testi
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
-\end{rSection}
+\cvEntry
+  {Universit\`a degli studi di Bari ``Aldo Moro"}
+  {Bari}
+  {Laurea Triennale in Informatica e Tecnologie per la Produzione del Software, 110/110}
+  {Aprile 2016}{
+    \begin{cvEntryItems}
+      Tesi: Applicazioni di Reti Neurali Ricorrenti al PoS-Tagging di Testi
+    \end{cvEntryItems}
+}
 
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+
+%-----------------------------------------------------------------------------------------
 %	CERTIFICATIONS SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Certificazioni}
+%-----------------------------------------------------------------------------------------
 
-\begin{rSubsection}{Coursera}{2017}{}{}
-\item Functional Programming Principles in Scala (Licenza numero: 85UUFRQVJ75F)
-\item Functional Program Design in Scala (Licenza numero: BYV4DHVGYYDU)
-\item Parallel programming (Licenza numero: 6BX9A2UTCGAX)
-\end{rSubsection}
+\cvSection{Certificazioni}
 
-\begin{rSubsection}{MongoDB University}{2014}{}{}
-\item M101P MongoDB for Developers
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
+\cvEntry
+  {The Linux Foundation}
+  {2021}{}{}{
+    \begin{cvEntryItems}
+      \item Certified Kubernetes Administrator (License number: LF-c55jbv7gct)
+    \end{cvEntryItems}
+  }
 
-\end{rSection}
+%-----------------------------------------------------------------------------------------
 
-%----------------------------------------------------------------------------------------
-%	LANGUAGES SECTION
-%----------------------------------------------------------------------------------------
+\cvEntry
+  {Coursera}
+  {2017}{}{}{
+    \begin{cvEntryItems}
+      \item Functional Programming Principles in Scala (License number: 85UUFRQVJ75F)
+      \item Functional Program Design in Scala (License number: BYV4DHVGYYDU)
+      \item Parallel programming (License number: 6BX9A2UTCGAX)
+    \end{cvEntryItems}
+  }
 
-\begin{rSection}{Languages}
+%-----------------------------------------------------------------------------------------
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Italiano & Madrelingua \\
-Inglese & Livello intermedio, scritto e parlato
-\end{tabular}
+\cvEntry
+  {MongoDB University}
+  {2014}{}{}{
+    \begin{cvEntryItems}
+      \item M101P MongoDB for Developers
+    \end{cvEntryItems}
+  }
 
-\end{rSection}
+%-----------------------------------------------------------------------------------------
 
-%----------------------------------------------------------------------------------------
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
-
-%\begin{rSection}{Section Name}
-
-%Section content\ldots
-
-%\end{rSection}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}

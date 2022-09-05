@@ -1,182 +1,285 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV
+% GG Professional CV
 % LaTeX Template
-% Version 2.0 (8/5/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Trey Hunner (http://www.treyhunner.com/)
-%
-% Important note:
-% This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring the
-% document.
+% Version 0.1 (5/9/22)
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-
-\name{Luigi Clemente} % Your name
-\address{github.com/Gigitsu \\ Skype: luigi.clemente.g2} % Your address
-\address{+39 328-540-9008 \\ luigi.clemente@gsquare.it} % Your phone number and email
+\name{Luigi}{Clemente}
+\position{Software Engineer}
+\github{gigitsu}
+\mobile{(+39) 328-5409008}
+\linkedin{luigi-clemente-g2}
+\email{luigi.clemente@gsquare.it}
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
 
-\begin{rSection}{Experience}
+\cvSection{Experience}
 
-\begin{rSubsection}{AgileLab}{October 2020 - Preset}{Data Engineer}{Milan}
-\item Design and development of DataMesh platform for the Enel data warehouse using Dremio, Spark, Springboot with Java, Scala and python
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
-\begin{rSubsection}{Dottori.it}{September 2019 - October 2020}{Senior Software Engineer}{Milan}
-\item Development and maintenance of Dottori.it, a web platform that aims to help people find the best doctor for their needs.
-\item Desing and development of a microservices architecture using Elixir, Phoenix and Ecto with PostgreSQL.
-\item Desing and development of services unit tests using ExUnit.
-\item Services deployment on Kubernetes cluster.
-\end{rSubsection}
+\cvEntry
+  {AgileLab}
+  {Milan}
+  {Data Engineer}
+  {October 2020 - Present}{
+    \begin{cvEntryItems}
+      \item Design and development of DataMesh platform for the Enel data warehouse using Dremio,
+            Spark, Springboot with Java, Scala and Python.
+    \end{cvEntryItems}
+  }
 
-\begin{rSubsection}{ATS S.p.A.}{October 2018 - August 2019}{Full Stack Developer | DevOps (as ApuliaSoft external consultant)}{Milan}
-\item Development of BlinkS platform, a digital marketplace for non performing loans trading.
-Restful backend written in Scala with AkkaHttp and Angular for the frontend.
-\item Design and development of rest api and Angular components.
-\item Design and development of unit test (using ScalaTest, ScalaMock and scala macro).
-\item Design and development of release and build pipelines using GitLab CI tools.
-\item Configuration of test and production environment on Azure (Kubernetes, MySQL).
-\item Application deploy on Kubernetes.
-\item Securing application using ModSecurity with CRS and custom rules on ingress nginx.
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
-%------------------------------------------------
+\cvEntry
+  {Dottori.it}
+  {Milan}
+  {Back-end Software Engineer}
+  {September 2019 - October 2020}{
+    \begin{cvEntryItems}
+      \item Development and maintenance of Dottori.it, a web platform that aims to help people
+            find the best doctor for their needs.
+      \item Design and development of a microservices architecture using Elixir, Phoenix and
+            Ecto with PostgreSQL.
+      \item Design and development of services unit tests using ExUnit.
+      \item Services deployment on Kubernetes cluster.
+    \end{cvEntryItems}
+  }
 
-\begin{rSubsection}{SIA S.p.A.}{January 2018 - September 2018}{Backend Developer (as ApuliaSoft external consultant)}{Milan}
-\item Development of the new version of the message broker of PagoPA\textregistered~system (named ``Nodo dei Pagamenti SPC"),
-a reactive system which uses Scala, scalaxb, Akka and Akka Cluster to handle payments flows between the involved stakeholders and the government.
-\item Design and development of tests for ``Nodo dei Pagamenti SPC" (using Scalatest).
-\item Design and development of application-based release pipelines with Jenkins.
-\item Release of application components on OpenShift cluster in test environment.
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
-%------------------------------------------------
+\cvEntry
+  {ATS S.p.A.}
+  {Milan}
+  {Back-end Software Engineer | DevOps (as ApuliaSoft external consultant)}
+  {October 2018 - August 2019}{
+    \begin{cvEntryItems}
+      \item Development of BlinkS platform, a digital marketplace for non performing loans trading.
+            Restful backend written in Scala with AkkaHttp and Angular for the frontend.
+      \item Design and development of rest api and Angular components.
+      \item Design and development of unit test (using ScalaTest, ScalaMock and Scala macro).
+      \item Design and development of release and build pipelines using GitLab CI tools.
+      \item Configuration of test and production environment on Azure (Kubernetes, MySQL).
+      \item Application deployment on Kubernetes.
+      \item Securing application using ModSecurity with CRS and custom rules on ingress nginx.
+    \end{cvEntryItems}
+  }
 
-\begin{rSubsection}{Exprivia S.p.A.}{May 2016 - December 2017}{Lead Developer (as ApuliaSoft external consultant)}{Molfetta}
-\item Design and development of an engine, using TypeScript and Angular2,
-able to emulate Oracle Forms functionality and therefore run old oracle forms application on modern browsers.
-\item Maintenance of a tool to convert Oracle Forms save files into JSON/TypeScript format files, using Java and ANTLR.
-\item Use of git and gitflow to manage the development process.
-\item Design and development of widgets for the home banking of Banca Mediolanum, using Google Closure lib, D3js and C3js.
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
-%------------------------------------------------
+\cvEntry
+  {SIA S.p.A.}
+  {Milan}
+  {Back-end Software Engineer (as ApuliaSoft external consultant)}
+  {January 2018 - September 2018}{
+    \begin{cvEntryItems}
+      \item Development of the new message broker version of PagoPA\textregistered~system
+            (named ``Nodo dei Pagamenti SPC"), a reactive system which uses Scala, scalaxb, Akka
+            and Akka Cluster to handle payments flows between the involved stakeholders and the
+            government.
+      \item Design and development of tests for ``Nodo dei Pagamenti SPC" (using Scalatest).
+      \item Design and development of application-based release pipelines with Jenkins.
+      \item Release of application components on OpenShift cluster in test environment.
+    \end{cvEntryItems}
+  }
 
-\begin{rSubsection}{ApuliaSoft S.r.l.}{October 2015 - August 2019}{Senior Developer}{Bari}
-\item Development of www.dolcidee.it, a web community where people can share recipes and cooking advice, using PHP and Symfony 2.
-\item Design and development of a Slack bot, written in JavaScript and deployed on Heroku, that help monitoring activities and
-happiness of the employees through questions made by the bot at the end of every working days.
-\item Design and development of a tool to optimize the disposition of articles into pallet displays for supermarkets, using TypeScript and Angular2.
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
-%------------------------------------------------
+\cvEntry
+  {Exprivia S.p.A.}
+  {Molfetta}
+  {Software Architect (as ApuliaSoft external consultant)}
+  {May 2016 - December 2017}{
+    \begin{cvEntryItems}
+      \item Design and development of an engine, using TypeScript and Angular2, able to
+            emulate Oracle Forms functionality and therefore run old Oracle Forms application
+            on modern browsers.
+      \item Maintenance of a tool to convert Oracle Forms save files into JSON/TypeScript
+            format files, using Java and ANTLR.
+      \item Use of git and gitflow to manage the development process.
+      \item Design and development of widgets for the home banking of Banca Mediolanum,
+            using Google Closure lib, D3js and C3js.
+    \end{cvEntryItems}
+  }
 
-\begin{rSubsection}{My Special Gift S.r.l.s., Startup}{April 2013 - May 2014}{Full Stack Developer}{Bari}
-\item Design and development of the My Special Gift platform through which you can create shared gift lists and where your friends can pay a stake through a PayPal account, using HTML, CSS and PHP with Yii.
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
-%------------------------------------------------
+\cvEntry
+  {ApuliaSoft S.r.l.}
+  {Bari}
+  {Full Stack Software Engineer}
+  {October 2015 - August 2019}{
+    \begin{cvEntryItems}
+      \item Development of www.dolcidee.it, a web community where people can share recipes
+            and cooking advice, using PHP and Symfony 2.
+      \item Design and development of a Slack bot, written in JavaScript and deployed on
+            Heroku, that help monitoring activities and happiness of the employees through
+            questions made by the bot at the end of every working days.
+      \item Design and development of a tool to optimize the disposition of articles into
+            pallet displays for supermarkets, using TypeScript and Angular2.
+    \end{cvEntryItems}
+  }
 
-\begin{rSubsection}{DigitalCopy S.r.l.}{August 2010 - March 2013}{Developer}{Altamura (BA)}
-\item Design and development of a cash register software and a management software for small and medium sized supermarket, using C\# .NET 4 with Microsoft WPF, nHibernate with SQLServer and dapper.net with sqlite
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
-\end{rSection}
+\cvEntry
+  {My Special Gift S.r.l.s., Startup}
+  {Bari}
+  {Full Stack Software Engineer}
+  {April 2013 - May 2014}{
+    \begin{cvEntryItems}
+      \item Design and development of the My Special Gift platform through which you can
+            create shared gift lists and where your friends can pay a stake through a
+            PayPal account, using HTML, CSS and PHP with Yii.
+    \end{cvEntryItems}
+  }
 
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
 
-\begin{rSection}{Technical Strengths}
+\cvEntry
+  {DigitalCopy S.r.l.}
+  {Altamura (BA)}
+  {Full Stack Software Engineer}
+  {August 2010 - March 2013}{
+    \begin{cvEntryItems}
+      \item Design and development of a cash register software and a management software for
+            small and medium sized supermarket, using C\# .NET 4 with Microsoft WPF, nHibernate
+            with SQLServer and dapper.net with sqlite
+      \item Maintenance of a management software for small and medium sized supermarket, using
+            Microsoft Access and VB6
+    \end{cvEntryItems}
+  }
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Operating Systems & MacOS, Linux, Windows \\
-Main programming languages & Elixir, Scala, Java, TypeScript, C\# \\
-Other scripting languages and runtime & Node.js, PHP, Python, R, SQL \\
-Frameworks and libraries & Phoenix, Ecto, Apache Spark, Akka \\
-RDBMS & MySQL, PostgreSQL, SQL Server \\
-NoSQL & MongoDB, Elasticsearch, Redis \\
-Other software & Git, IntelliJ, Vim, VS Code, Kibana \\
-Others & Docker, Jenkins, Microsoft Azure, Kubernetes \\
-\end{tabular}
+%-----------------------------------------------------------------------------------------
 
-\end{rSection}
+%-----------------------------------------------------------------------------------------
+%	Skills
+%-----------------------------------------------------------------------------------------
 
-%----------------------------------------------------------------------------------------
+\cvSection{Skills}
+
+\begin{cvSkills}
+
+%-----------------------------------------------------------------------------------------
+
+  \cvSkill
+    {Programming}
+    {Elixir, Scala, Java, TypeScript, C\#, PHP, Python, SQL}
+
+%-----------------------------------------------------------------------------------------
+
+  \cvSkill
+    {Front-end}
+    {HTML5, SASS, LESS, Angular}
+
+%-----------------------------------------------------------------------------------------
+
+  \cvSkill
+    {Databases}
+    {MySQL, PostgreSQL, SQL Server, MongoDB, Elasticsearch, Redis}
+
+%-----------------------------------------------------------------------------------------
+
+  \cvSkill
+    {Back-end}
+    {Phoenix, Ecto, Apache Spark, Akka}
+
+%-----------------------------------------------------------------------------------------
+
+  \cvSkill
+    {DevOps}
+    {Kibana, Docker, K8s, Microsoft Azure, AWS}
+
+%-----------------------------------------------------------------------------------------
+
+  \cvSkill
+    {Tools}
+    {Git, IntelliJ, Vim, VS Code, Tmux}
+
+%-----------------------------------------------------------------------------------------
+
+  \cvSkill
+    {}{}
+
+%-----------------------------------------------------------------------------------------
+
+  \cvSkill
+    {Languages}
+    {Italian, English}
+
+%-----------------------------------------------------------------------------------------
+
+\end{cvSkills}
+
+%-----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
 
-\begin{rSection}{Education}
+\cvSection{Education}
 
-\begin{rSubsection}{University of Bari ``Aldo Moro"}{April 2016}{BCs in Computer Science, 110/110}{Bari}
-Thesis: Applicazioni di Reti Neurali Ricorrenti al PoS-Tagging di Testi
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
-\end{rSection}
+\cvEntry
+  {University of Bari ``Aldo Moro"}
+  {Bari}
+  {BCs in Computer Science, 110/110}
+  {April 2016}{
+    \begin{cvEntryItems}
+      Thesis: Applicazioni di Reti Neurali Ricorrenti al PoS-Tagging di Testi
+    \end{cvEntryItems}
+  }
 
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
+
+%-----------------------------------------------------------------------------------------
 %	CERTIFICATIONS SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Certifications}
+%-----------------------------------------------------------------------------------------
 
-\begin{rSubsection}{The Linux Foundation}{2021}{}{}
-\item Certified Kubernetes Administrator (License number: LF-c55jbv7gct)
-\end{rSubsection}
+\cvSection{Certifications}
 
-\begin{rSubsection}{Coursera}{2017}{}{}
-\item Functional Programming Principles in Scala (License number: 85UUFRQVJ75F)
-\item Functional Program Design in Scala (License number: BYV4DHVGYYDU)
-\item Parallel programming (License number: 6BX9A2UTCGAX)
-\end{rSubsection}
+%-----------------------------------------------------------------------------------------
 
-\begin{rSubsection}{MongoDB University}{2014}{}{}
-\item M101P MongoDB for Developers
-\end{rSubsection}
+\cvEntry
+  {The Linux Foundation}
+  {2021}{}{}{
+    \begin{cvEntryItems}
+      \item Certified Kubernetes Administrator (License number: LF-c55jbv7gct)
+    \end{cvEntryItems}
+  }
 
+%-----------------------------------------------------------------------------------------
 
-\end{rSection}
+\cvEntry
+  {Coursera}
+  {2017}{}{}{
+    \begin{cvEntryItems}
+      \item Functional Programming Principles in Scala (License number: 85UUFRQVJ75F)
+      \item Functional Program Design in Scala (License number: BYV4DHVGYYDU)
+      \item Parallel programming (License number: 6BX9A2UTCGAX)
+    \end{cvEntryItems}
+  }
 
-%----------------------------------------------------------------------------------------
-%	LANGUAGES SECTION
-%----------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------
 
-\begin{rSection}{Languages}
+\cvEntry
+  {MongoDB University}
+  {2014}{}{}{
+    \begin{cvEntryItems}
+      \item M101P MongoDB for Developers
+    \end{cvEntryItems}
+  }
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Italian & Native speaker \\
-English & Intermediate level, written and spoken
-\end{tabular}
+%-----------------------------------------------------------------------------------------
 
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
-
-%\begin{rSection}{Section Name}
-
-%Section content\ldots
-
-%\end{rSection}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
