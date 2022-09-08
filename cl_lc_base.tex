@@ -1,0 +1,65 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% GG Professional CV
+% LaTeX Template
+% Version 0.1 (5/9/22)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\name{Luigi}{Clemente}
+\position{Software Engineer}
+\github{gigitsu}
+\mobile{(+39) 328-5409008}
+\linkedin{luigi-clemente-g2}
+\email{luigi.clemente@gsquare.it}
+
+%-----------------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-----------------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {ACME Inc.}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Software Engineer}
+% How the letter is closed
+\letterclosing{Sincerely,}
+
+%-----------------------------------------------------------------------------------------
+\begin{document}
+% Print the title with above letter information
+
+\makelettertitle
+
+%-----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-----------------------------------------------------------------------------------------
+
+\begin{cvletter}
+
+\lettersection{About Me}
+I'm Luigi, a software engineer with 12 years of experience in many different areas of software. Most of my experience lies in full stack development with more focus in backend development and some devops.
+During my carreer I have crafted C# Windows application with some highly optimized code written directly in IL, web application tailored on custmer needs using technologies like Angular, TypeScript, SASS and many
+PHP backend frameworks and in the last 5/6 I focused mainly in functional programming using technologies such as Scala, Akka and Elixir. \\ I often start personal projects just for the fun of learn new skills.
+I have recently made a personal zsh framework (like oh-my-zsh but much more simple and lightweight), started studiyng Rust to make a PR on an open source project and started writing a SQLite clone in C just to learn better databases internals.
+
+\lettersection{Why ACME Inc.?}
+Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+\end{cvletter}
+
+%-----------------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+%-----------------------------------------------------------------------------------------
+
+\makeletterclosing
+
+\end{document}
