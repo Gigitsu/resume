@@ -313,6 +313,7 @@
 
 % Define an entry of cv information
 \newcommand*{\cvEntry}[5]{%
+  \vspace{0.8em}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
