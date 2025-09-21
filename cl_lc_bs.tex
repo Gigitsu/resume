@@ -1,0 +1,69 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% GG Professional CV
+% LaTeX Template
+% Version 0.1 (5/9/22)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\name{Luigi}{Clemente}
+\position{Software Engineer}
+\github{gigitsu}
+\mobile{(+39) 328-5409008}
+\linkedin{luigi-clemente-g2}
+\email{luigi.clemente@gsquare.it}
+
+%-----------------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-----------------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {Bending Spoons S.p.A.}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Backend Engineer}
+% How the letter is closed
+\letterclosing{Sincerely,}
+
+%-----------------------------------------------------------------------------------------
+\begin{document}
+% Print the title with above letter information
+
+\makelettertitle
+
+%-----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-----------------------------------------------------------------------------------------
+
+\begin{cvletter}
+
+\lettersection{About Me}
+I'm Luigi, a software engineer with 12 years of experience in many different areas of software. Most of my experience lies in full stack development with more focus on backend development. During my
+career, I have crafted C\# Windows applications with some highly optimized code written directly in IL, web applications tailored to customer needs using technologies like Angular, TypeScript, SASS and
+many PHP backend frameworks and in the last 5/6, I focused mainly in functional programming using technologies such as Scala, Akka and Elixir. \\ I often start personal projects just for the fun of
+learning new skills.  I have recently made a personal zsh framework (like oh-my-zsh but much more simple and lightweight), started studying Rust to make a PR on an open source project and started writing
+an SQLite clone in C just to learn better databases internals.
+
+\lettersection{Why Bending Spoons?}
+I'm impressed by the quality of your products and the number of people it reaches. I like the idea to build something that can have an impact on people's day-by-day life. I'm also very curious about the technologies
+you have developed! I did some experiments in video editing in the past (very amatorial), I have always been fascinated by these pieces of technologies and I'm thrilled to know how Fellini works. Furthermore, when I 
+was in Milan, I participated in some of your meetups and the environment you have built seemed compelling and challenging, full of skilled and passionate people. An environment in which I feel I can contribute
+and grow.
+
+\end{cvletter}
+
+%-----------------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+%-----------------------------------------------------------------------------------------
+
+\makeletterclosing
+
+\end{document}
